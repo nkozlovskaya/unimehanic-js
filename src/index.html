@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@800&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Unimehanic JS</title>
+  </head>
+  <body>
+    <div class="content">
+      <button class="content__btn popup-btn">Open modal Window</button>
+      <button class="content__btn table-btn">
+        Get table from JSONPlaceHolder
+      </button>
+    </div>
+    <div class="overlay">
+      <div class="popup">
+        <div id="modal" class="modal">
+          <h1 class="modal__header">Стать партнёром проекта</h1>
+          <form class="modal__form" action="#">
+            <div class="modal__about">
+              <div class="modal__info">
+                <div class="modal__input-info text-field">
+                  <label class="text-field__label" for="text"
+                    ><span>✱</span> Название организации</label
+                  >
+                  <input
+                    name="name"
+                    class="text-field__input"
+                    required
+                    value="АВЦ "
+                    type="text"
+                  />
+                </div>
+                <div class="modal__input-info text-field">
+                  <label class="text-field__label" for="text"
+                    ><span>✱</span> Телефон</label
+                  >
+                  <input
+                    name="phone"
+                    class="text-field__input"
+                    required
+                    value="+7 933 848-34-33 "
+                    type="text"
+                  />
+                </div>
+                <div class="modal__input-info text-field">
+                  <label class="text-field__label" for="text"
+                    ><span>✱</span> E-mail</label
+                  >
+                  <input
+                    name="email"
+                    class="text-field__input"
+                    required
+                    value="avc@gmail.com "
+                    type="email"
+                  />
+                </div>
+              </div>
+              <div class="modal__form-foto">
+                <a class="modal__form-text">
+                  <span>✱</span> Логотип (jpeg, png)
+                </a>
+                <div class="modal__form-choice">
+                  <a class="modal__form-close"><img src="img/close.png" /></a>
+                  <a class="modal__form-link"><img src="img/choice.png" /></a>
+                  <a class="modal__form-linkText">Выберите файл</a>
+                  <img src="img/foto.png" alt="foto" class="modal__form-img" />
+                </div>
+              </div>
+            </div>
+
+            <div class="select">
+              <select
+                name="direction"
+                id="direction"
+                class="modal__input select__option"
+              >
+                <option value="Экология" selected class="select__option-text">
+                  Экология
+                </option>
+              </select>
+              <label class="text-field__label select__label" for="text"
+                ><span>✱</span> Направление</label
+              >
+            </div>
+            <div class="modal__form modal__input-social">
+              <input
+                class="modal__input input-web"
+                name="web"
+                value="avc.ru"
+                type="text"
+              />
+              <input
+                class="modal__input input-vk"
+                name="vk"
+                value="vk.com/shans"
+                type="text"
+              />
+              <input
+                class="modal__input input-classmates"
+                name="ok"
+                value="ok.com/shans"
+                type="text"
+              />
+              <input
+                class="modal__input input-facebook"
+                name="facebook"
+                value="facebook.com/shans"
+                type="text"
+              />
+              <input
+                class="modal__input input-instagram"
+                name="instagram"
+                value="instagram.com/shans"
+                type="text"
+              />
+              <input
+                class="modal__input input-youtube"
+                name="youtube"
+                value="youtube.com/shans"
+                type="text"
+              />
+            </div>
+            <button class="button button_submit">
+              Стать партнёром проекта
+            </button>
+            <a class="modal__form-cansel">Отменить</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text"> 
+                <input name="phone" required placeholder="Ваш телефон" type="number"> 
+                <input name="email" required placeholder="Ваш E-mail" type="email"> 
+
+                <button class="button button_submit">заказать консультацию</button>
+            </form>
+        </div> -->
